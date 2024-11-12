@@ -6,8 +6,8 @@
 
     -   [x] Creating a single field
     -   [x] Creating a fields grid
-    -   [ ] Creating a single tile
-    -   [ ] Creating a tile in each field
+    -   [x] Creating a single tile
+    -   [x] Creating a tile in each field
 
 -   [ ] Moving tiles
 
