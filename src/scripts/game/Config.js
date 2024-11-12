@@ -9,4 +9,8 @@ export const Config = {
     scenes: {
         Game: Game,
     },
+    board: {
+        rows: 8,
+        cols: 8,
+    },
 }
