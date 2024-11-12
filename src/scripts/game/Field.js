@@ -17,4 +17,10 @@ export class Field {
             y: this.row * this.sprite.height,
         }
     }
+
+    setTile(tile) {
+        this.tile = tile
+        tile.field = this
+        tile.setPosition(this.position)
+    }
 }
