@@ -13,4 +13,5 @@ export const Config = {
         rows: 8,
         cols: 8,
     },
+    tilesColors: ['blue', 'green', 'orange', 'pink', 'red', 'yellow'],
 }
