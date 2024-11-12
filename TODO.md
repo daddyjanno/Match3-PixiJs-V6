@@ -2,17 +2,17 @@
 
 -   [x] Project setup
 
--   [ ] Creating the tiles board
+-   [x] Creating the tiles board
 
     -   [x] Creating a single field
     -   [x] Creating a fields grid
     -   [x] Creating a single tile
     -   [x] Creating a tile in each field
 
--   [ ] Moving tiles
+-   [x] Moving tiles
 
-    -   [ ] Select a tile to move
-    -   [ ] Swapping tiles
+    -   [x] Select a tile to move
+    -   [x] Swapping tiles
 
 -   [ ] Search for combinations
 
