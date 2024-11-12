@@ -49,7 +49,7 @@ export class Board {
         field.setTile(tile)
         this.container.addChild(tile.sprite)
         tile.sprite.interactive = true
-        tile.sprite.on('poniterdown', () => {
+        tile.sprite.on('pointerdown', () => {
             this.container.emit('tile-touch-start', tile)
         })
     }
