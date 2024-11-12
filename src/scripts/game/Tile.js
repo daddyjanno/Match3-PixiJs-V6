@@ -1,5 +1,10 @@
+import * as PIXI from 'pixi.js'
 import gsap from 'gsap'
 import { App } from '../system/App'
+import { PixiPlugin } from 'gsap/all'
+
+gsap.registerPlugin(PixiPlugin)
+PixiPlugin.registerPIXI(PIXI)
 
 export class Tile {
     constructor(color) {
@@ -12,10 +17,12 @@ export class Tile {
         this.sprite.x = position.x
         this.sprite.y = position.y
     }
-    moveTo(position, duration) {
+    moveTo(position, duration = 1, delay = 0, ease = 'power1.out') {
         return new Promise((resolve) => {
             gsap.to(this.sprite, {
                 duration,
+                delay,
+                ease,
                 pixi: {
                     x: position.x,
                     y: position.y,
