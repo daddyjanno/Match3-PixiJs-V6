@@ -1,15 +1,16 @@
 import * as PIXI from 'pixi.js'
 import { App } from '../system/App'
 import { Scene } from '../system/Scene'
-import { Field } from './Field'
+import { Board } from './Board'
 
 export class Game extends Scene {
     constructor() {
         super()
         this.container = new PIXI.Container()
         this.createBackground()
-        const field = new Field(1, 1)
-        this.container.addChild(field.sprite)
+
+        this.board = new Board()
+        this.container.addChild(this.board.container)
     }
     createBackground() {
         this.bg = App.sprite('bg')
