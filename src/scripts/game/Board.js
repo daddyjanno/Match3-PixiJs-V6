@@ -48,5 +48,19 @@ export class Board {
         const tile = TileFactory.generate()
         field.setTile(tile)
         this.container.addChild(tile.sprite)
+        tile.sprite.interactive = true
+        tile.sprite.on('poniterdown', () => {
+            this.container.emit('tile-touch-start', tile)
+        })
+    }
+    swap(tile1, tile2) {
+        const tile1Field = tile1.field
+        const tile2Field = tile2.field
+
+        tile1Field.tile = tile2
+        tile2.field = tile1Field
+
+        tile2Field.tile = tile1
+        tile1.field = tile2Field
     }
 }
