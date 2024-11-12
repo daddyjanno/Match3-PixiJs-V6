@@ -4,7 +4,7 @@
 
 -   [ ] Creating the tiles board
 
-    -   [ ] Creating a single field
+    -   [x] Creating a single field
     -   [ ] Creating a fields grid
     -   [ ] Creating a single tile
     -   [ ] Creating a tile in each field
